@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&family=Poppins:wght@400;600;700;800&display=swap');
+
+html,
+body{
+    scroll-behavior: smooth;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --background-primary:#FFFFFF;
+    --title-color:#1E1E1E;
+    --title-size:42px;
+    --btn-cta1:#4CAF50;
+    --btn-cta2:#F57C00;
+    --paragrafo-color:#555555;
+    --paragrafo-size:15px;
+    --logo-size:35px;
+    --links-size:15px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-left{
+    width: 60%;
+    height: 100%;
+    color: white;
+    background-image:linear-gradient(rgba(0,0,0,0.4)), url("campo-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    width: 60%;
+}
+.center h1, h4{
+    line-height: 1.3;
+    margin: 4%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.left h1{
+ font-size: 44px;
+ font-weight: 700;
+}
+
+.left p{
+    font-family: 'Inter', sans-serif;
+    line-height: 1.1;
+    font-weight: 500;
+}
+.center span{
+    color: #F57C00;
+}
+
+.content-right{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 5%;
+}
+
+.back svg{
+    width: 35px;
+    height: 35px;
+}
+
+.back a{
+    text-decoration:none ;
+}
+.back p{
+    margin-top: 6px;
+    color: #555555;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.right h3{
+    color: var(--title-color);
+    font-size: 30px;
+    opacity: 0.8;
+    margin-bottom: 4%;
+    line-height: 1.1;
+    font-family: 'Poppins', sans-serif;
+}
+
+.right p{
+    color: #555555;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.1;
+    font-weight: 500;
+    margin-bottom: 6%;
+
+}
+
+.input-box{
+    width: 250px;
+    position: relative;
+}
+
+input{
+    width: 100%;
+    border: 2px solid #4CAF50;
+    padding: 15px;
+    outline: none;
+    border-radius: 8px;
+}
+
+label{
+    position: absolute;
+    left: 12px;
+    top: 15px;
+    outline: none;
+    transition: 0.3s;
+    font-size: 16px;
+    padding: 0 5px;
+    pointer-events: none;
+    color: #555555;
+    font-family: 'Inter', sans-serif;
+}
+
+.input1{
+    margin-bottom: 4%;
+}
+
+.input2{
+    margin-bottom: 2%;
+}
+
+input:focus+label,
+input:valid+label{
+    top: -8px;
+    font-size: 12px;
+    background: #FFFFFF;
+}
+
+.remenber{
+    position: relative;
+    width: 350px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.marg{
+    margin-left: 12%;
+    margin-bottom: 2%;
+}
+
+.remenber a{
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.remenber input{
+    position: absolute;
+    right: 75px;
+}
+
+.remenber label{
+    position: absolute;
+    left: -5px;
+    margin-bottom: 4%;
+    font-size: 14px;
+    color: #4CAF50;
+    /* font-size: 10px; */
+}
+
+.btn-login{
+    width: 250px;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    background: #F57C00;
+    color: #FFFFFF;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-login a{
+    text-decoration: none;
+    color: #FFFFFF;
+     font-family: 'Inter', sans-serif;
+}
+
+.divisor{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 3%;
+}
+
+.divisor::before,
+.divisor::after{
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #e2e8df;
+}
+
+.google{
+    width: 250px;
+    padding: 13px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 5%;
+    margin-left: 14%;
+    border: 1px solid #555555;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+#erro{
+    width: 250px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 3%;
+}
+
+.google img{
+    width: 14px;
+    text-align: center;
+    margin-right: 2%;
+}
+
+
+@media screen and (max-width:767px) {
+    .content-left{
+        display: none;
+    }
+
+    .container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
