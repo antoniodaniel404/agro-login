@@ -43,7 +43,7 @@ body{
     width: 60%;
     height: 100%;
     color: white;
-    background-image:linear-gradient(rgba(0,0,0,0.4)), url("campo-image.jpg");
+    background-image:linear-gradient(rgba(0,0,0,0.4)), url("/src/img/campo-image.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
